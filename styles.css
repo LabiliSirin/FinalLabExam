@@ -1,0 +1,130 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00A1E4; /* Template background color */
+    color: #fff;
+    background-image: url('download.jpg');
+    background-size: cover;
+}
+
+header {
+    background-color: #007ACC; /* Darker blue for header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+#cityForm {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#cityInput {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#cityInput:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #005B99;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#current-weather {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+#current-weather h2,
+#current-weather p {
+    margin: 10px 0;
+}
+
+.forecast-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.daily-forecast-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.daily-forecast {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    margin: 10px; /* Added margin for spacing */
+}
+
+.daily-forecast img {
+    width: 50px;
+    height: 50px;
+}
+
+.daily-forecast p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    #cityInput {
+        width: 100%;
+    }
+    .daily-forecast-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .daily-forecast {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+.map-container {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
